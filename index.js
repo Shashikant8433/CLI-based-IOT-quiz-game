@@ -6,9 +6,9 @@ var userName = readlineSync.question(chalk.bgCyan(`Hello! welcome to IOT(interne
 let userAnswer = readlineSync.question(chalk.bgMagenta("\nDo you have any knowledge about IOT(internet of things)? \n"));
 
 
-if (userAnswer.toLowerCase() === "yes") {
+if (userAnswer.toLowerCase() === "yes" || userAnswer.toLowerCase() === "yeah" || userAnswer.toLowerCase() === "yup") {
     console.log(chalk.bgYellow("\nOk, lemme ask some questions then."))
-} else if (userAnswer.toLowerCase() === "no") {
+} else if (userAnswer.toLowerCase() === "no" || userAnswer.toLowerCase() === "na" || userAnswer.toLowerCase() === "nope") {
     console.log(chalk.bgYellow("\nget to know about iot first to play this game"))
 } else {
     console.log(chalk.bgRed("Please answer in yes or no."))
@@ -84,7 +84,7 @@ var highScorers = [{
 
 var highScorersLength = highScorers.length;
 
-//below function prints screenshot sentence thrice if user scores 5
+//below function prints screenshot sentence thrice if user scores 10
 // function checkHighScorers(){
 //   for(let j = 0; j < highScorersLength; j++){
 //     if(score >= highScorers[j].score){
